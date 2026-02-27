@@ -61,82 +61,46 @@ Fournis donc les règles de gestion et le dictionnaire de données.
 
 ## Dictionnaire de données :
 
-
 | Signification de la donnée              | Type (Looping)   | Taille |
-
 |----------------------------------------|------------------|--------|
-
 | Identifiant événement                  | Entier           | 6      |
-
 | Nom événement                          | Texte            | 100    |
-
 | Date événement                         | Date             | —      |
-
 | Heure début événement                  | Heure            | —      |
-
 | Heure fin événement                    | Heure            | —      |
-
 | Lieu événement                         | Texte            | 150    |
-
 | Capacité maximale                      | Entier           | 5      |
-
 | Statut événement                       | Texte            | 20     |
-
 | Budget prévisionnel                    | Décimal (10,2)   | 10     |
-
 | Identifiant BDE                        | Entier           | 5      |
-
 | Nom BDE                                | Texte            | 100    |
-
 | Identifiant participant                | Entier           | 6      |
-
 | Nom participant                        | Texte            | 50     |
-
 | Prénom participant                     | Texte            | 50     |
-
 | Email participant                      | Texte            | 100    |
-
 | Identifiant inscription                | Entier           | 6      |
-
 | Identifiant billet                     | Entier           | 6      |
-
 | Catégorie billet                       | Texte            | 50     |
-
 | Prix billet                            | Décimal (8,2)    | 8      |
-
 | Statut billet                          | Texte            | 20     |
-
 | Identifiant paiement                   | Entier           | 6      |
-
 | Montant paiement                       | Décimal (8,2)    | 8      |
-
 | Mode paiement                          | Texte            | 30     |
-
 | Statut paiement                        | Texte            | 20     |
-
 | Date paiement                          | Date             | —      |
-
 | Identifiant DJ                         | Entier           | 5      |
-
 | Nom DJ                                 | Texte            | 100    |
-
 | Cachet DJ (dans Anime)                 | Décimal (10,2)   | 10     |
-
 | Identifiant fournisseur                | Entier           | 5      |
-
 | Nom fournisseur                        | Texte            | 100    |
-
 | Identifiant boisson                    | Entier           | 5      |
-
 | Nom boisson                            | Texte            | 100    |
-
 | Prix boisson                           | Décimal (8,2)    | 8      |
-
 | Quantité livrée                        | Entier           | 6      |
-
 | Identifiant incident                   | Entier           | 6      |
-
 | Description incident                   | Texte            | 255    |
+
+
 
 ##
 
