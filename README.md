@@ -1,5 +1,6 @@
                                                   ** README Selene Akdogan / Victor Vaures **
 
+## PARTIE 1
 ## Prompt :
 
 Tu travailles dans le domaine de l’organisation professionnelle de soirées étudiantes et d’événements universitaires.
@@ -113,4 +114,134 @@ Fournis donc les règles de gestion et le dictionnaire de données.
 
 ## MCD - Partie 1
 ![MCD](Loopingfinal.jpg)
+
+
+#
+#
+## PARTIE 2
+
+## Règles de métier modifiés (facultatif, nous avons réglé quelques erreurs) : 
+
+- Chaque événement possède un identifiant unique.
+- Un événement possède un nom, une date, une heure de début, une heure de fin, un statut et un budget prévisionnel.
+- Le statut d’un événement ne peut prendre que l’une des valeurs suivantes : prévu, annulé, terminé.
+- Chaque événement se déroule dans un seul lieu.
+- Un lieu peut accueillir plusieurs événements à des dates différentes.
+- Chaque lieu possède un libellé et une capacité maximale d’accueil.
+- La capacité maximale d’un lieu doit être strictement positive.
+- L’heure de fin d’un événement doit être postérieure à son heure de début.
+- Le budget prévisionnel d’un événement ne peut pas être négatif.
+- Un événement peut être organisé par un ou plusieurs BDE.
+- Un BDE peut participer à l’organisation de plusieurs événements.
+- Des BDE peuvent collaborer entre eux dans le cadre de l’organisation d’un même événement.
+- Chaque BDE possède un identifiant unique et un nom.
+- Chaque participant doit être enregistré avant de pouvoir s’inscrire à un événement.
+- Chaque participant possède un identifiant unique, un nom, un prénom et une adresse e-mail.
+- L’adresse e-mail d’un participant doit être unique.
+- Un participant peut s’inscrire à plusieurs événements.
+- Une inscription possède un identifiant unique.
+- Une inscription est nominative : elle concerne un seul participant et un seul événement.
+- Un participant ne peut pas avoir plusieurs inscriptions pour un même événement.
+- Chaque inscription correspond à un seul billet.
+- Chaque billet est associé à une seule inscription.
+- Chaque billet possède un identifiant unique et un statut.
+- Le statut d’un billet ne peut prendre que l’une des valeurs suivantes : valide, annulé, utilisé.
+- Un billet appartient à un seul type de billet.
+- Un type de billet est défini par un nom de type et un prix.
+- Le prix d’un type de billet ne peut pas être négatif.
+- Un même type de billet peut être utilisé pour plusieurs billets.
+- Un participant peut détenir plusieurs billets, à condition qu’ils correspondent à des événements différents ou à plusieurs inscriptions distinctes.
+- Une inscription peut être gratuite ou payante.
+- Une inscription gratuite ne donne pas lieu à un paiement.
+- Une inscription payante peut donner lieu à un seul paiement.
+- Chaque paiement correspond à une seule inscription.
+- Chaque paiement possède un identifiant unique, un montant, un mode de paiement, un statut et une date de paiement.
+- Le montant d’un paiement ne peut pas être négatif.
+- Le mode de paiement ne peut prendre que l’une des valeurs suivantes : CB, espèces, virement.
+- Le statut d’un paiement ne peut prendre que l’une des valeurs suivantes : accepté, refusé, en attente.
+- Chaque DJ possède un identifiant unique et un nom.
+- Un DJ peut être programmé pour plusieurs événements.
+- Un événement peut accueillir un ou plusieurs DJ.
+- Pour chaque prestation d’un DJ lors d’un événement, un cachet est défini et enregistré.
+- Le cachet d’un DJ ne peut pas être négatif.
+- Chaque fournisseur possède un identifiant unique et un nom.
+- Un fournisseur peut fournir plusieurs boissons.
+- Une boisson peut être fournie par plusieurs fournisseurs.
+- Chaque boisson possède un identifiant unique, un nom et un prix unitaire.
+- Le prix unitaire d’une boisson ne peut pas être négatif.
+- Pour chaque relation entre un fournisseur, une boisson et un événement, la quantité livrée est enregistrée.
+- La quantité livrée doit être strictement positive.
+- Un événement peut être associé à zéro, un ou plusieurs incidents.
+- Tout incident survenu pendant un événement doit être enregistré.
+- Chaque incident possède un identifiant unique et une description.
+- Un incident est obligatoirement rattaché à un seul événement.
+- Un incident peut impliquer un ou plusieurs participants.
+
+#
+## Dictionnaire modifié également (on a ajouté de nouveaux entités et attributs) :
+| Signification de la donnée | Type (Looping) | Taille |
+|----------------------------|---------------|--------|
+| Identifiant événement | Entier | 6 |
+| Nom événement | Texte | 100 |
+| Date événement | Date | — |
+| Heure début événement | Heure | — |
+| Heure fin événement | Heure | — |
+| Lieu événement | Texte | 150 |
+| Capacité maximale | Entier | 5 |
+| Statut événement | Texte | 20 |
+| Budget prévisionnel | Décimal (10,2) | 10 |
+| Identifiant BDE | Entier | 5 |
+| Nom BDE | Texte | 100 |
+| Identifiant participant | Entier | 6 |
+| Nom participant | Texte | 50 |
+| Prénom participant | Texte | 50 |
+| Email participant | Texte | 100 |
+| Identifiant inscription | Entier | 6 |
+| Identifiant billet | Entier | 6 |
+| Statut billet | Texte | 20 |
+| Nom type billet | Texte | 50 |
+| Prix billet type | Décimal (8,2) | 8 |
+| Identifiant paiement | Entier | 6 |
+| Montant paiement | Décimal (8,2) | 8 |
+| Mode paiement | Texte | 30 |
+| Statut paiement | Texte | 20 |
+| Date paiement | Date | — |
+| Identifiant DJ | Entier | 5 |
+| Nom DJ | Texte | 100 |
+| Cachet DJ (dans Anime) | Décimal (10,2) | 10 |
+| Identifiant fournisseur | Entier | 5 |
+| Nom fournisseur | Texte | 100 |
+| Identifiant boisson | Entier | 5 |
+| Nom boisson | Texte | 100 |
+| Prix boisson | Décimal (8,2) | 8 |
+| Quantité livrée | Entier | 6 |
+| Identifiant incident | Entier | 6 |
+| Description incident | Texte | 255 |
+
+#
+
+## Nouvelle justification : 
+
+Afin de respecter la troisième forme normale (3FN), nous avons introduit une entité Type_billet. En effet, plusieurs billets peuvent appartenir à une même catégorie (standard, VIP, early, etc.) et partager les mêmes caractéristiques, notamment le prix. Si le prix était stocké directement dans l’entité Billet, cette information serait répétée pour chaque billet appartenant à une même catégorie. Cette redondance pourrait entraîner des incohérences lors de la mise à jour des données.
+Pour éviter cela, nous avons isolé les informations communes aux billets dans l’entité Type_billet, qui contient notamment le nom du type et le prix associé. Ainsi, chaque billet référence simplement son type, ce qui garantit que chaque attribut dépend uniquement de la clé primaire de son entité et permet de respecter la troisième forme normale.
+
+#
+
+## MCD - Partie 2
+![MCD](LoopingFinal.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
