@@ -243,5 +243,3 @@ Pour éviter cela, nous avons isolé les informations communes aux billets dans 
 
 
 
-
-
