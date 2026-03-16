@@ -312,7 +312,38 @@ Fournir l’ensemble sous la forme d’un **script SQL prêt à être exécuté*
 
 
 
+#
+## SCENARIO UTILISE :
 
+Je suis président du BDE de mon école et je souhaite organiser un nouvel événement pour les étudiants. Afin de préparer au mieux cette soirée, je réalise d’abord une étude des événements passés enregistrés dans la base de données afin de comprendre ce qui plaît le plus aux étudiants et d’identifier les éléments qui permettent d’assurer la réussite d’un événement.
+
+Dans un premier temps, je vérifie les événements déjà prévus ainsi que leurs dates afin de positionner mon événement à une date disponible et d’éviter tout conflit avec un autre événement déjà planifié. (1)
+
+Je repère ensuite les événements déjà enregistrés dont le budget est compris entre 5000 et 20000 euros, ce qui correspond au budget dont je dispose pour organiser ma soirée. (2)
+
+Pour m’assurer que l’événement choisi peut plaire aux étudiants, j’affiche le ou les événements ayant obtenu le plus grand nombre d’inscriptions. Cela me permet d’identifier les événements qui ont rencontré le plus de succès. (3)
+
+Si le budget n’est pas le même, je compte ensuite le nombre d’inscriptions pour chaque événement afin d’avoir une vision globale de la popularité des différents événements. (4) Si je souhaite affiner mes recherches, je peux afficher uniquement les événements ayant obtenu plus de x inscriptions. Dans le cadre de notre simulation, nous nous contenterons de 2, ce qui correspond à un seuil minimal de popularité pour cette simulation. (5)
+
+Je souhaite également organiser un événement sans incident. Pour cela, j’affiche les événements qui n’ont enregistré aucun incident afin de m’inspirer d’événements qui se sont bien déroulés. (6)
+
+J’ai choisi de m’inspirer de l’événement « Soirée Halloween », qui a l’identifiant 5, et je commence à préparer l’organisation de la soirée. Je souhaite notamment savoir comment les participants effectuent leurs paiements afin de déterminer si les paiements se font principalement par carte bancaire ou par virement et ainsi mettre en place les moyens de paiement les plus adaptés. (7)
+
+Pour organiser la partie boissons de l’événement, j’étudie le prix moyen des boissons par fournisseur afin d’identifier les fournisseurs les plus avantageux. (8)
+
+Ayant un budget précis, je recherche également un DJ dont le cachet moyen est inférieur à 4000 euros afin de respecter les contraintes budgétaires de l’événement. (9)
+
+Afin de commander les boissons, je me réfère à la commande effectuée pour le dernier événement qui y ressemble. (10)
+
+Je souhaite ensuite effectuer la communication et la publicité de l’événement auprès des étudiants. Pour cela, j’identifie les participants ayant déjà participé à un événement similaire et j’affiche leur adresse email afin de pouvoir les contacter. (11)
+
+Pour optimiser la communication sur les réseaux sociaux, j’analyse également les dates auxquelles les étudiants achètent le plus de billets, ce qui me permet de savoir à quel moment la publicité est la plus efficace. (12)
+
+L’événement approchant, je vérifie enfin qu’aucun participant inscrit à mon événement n’a été impliqué dans un incident lors d’un autre événement afin de limiter les risques de problème. (13)
+
+Après le déroulement de l’événement, un incident est signalé. Je dispose du nom de la personne impliquée (Moreau), et je vérifie donc que cette personne est bien un participant inscrit à l’événement. (14)
+
+Ainsi, grâce aux différentes requêtes d’interrogation de la base de données, le président du BDE peut analyser les événements passés, identifier les éléments qui ont contribué à leur succès et anticiper les éventuels problèmes. Ces informations lui permettent de prendre des décisions éclairées pour organiser un nouvel événement adapté aux attentes des étudiants tout en respectant les contraintes budgétaires et organisationnelles.
 
 
 
